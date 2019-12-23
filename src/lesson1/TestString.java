@@ -1,6 +1,5 @@
 package lesson1;
 
-import java.sql.SQLOutput;
 
 public class TestString {
     public static void main(String[] args) {
