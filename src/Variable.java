@@ -20,7 +20,7 @@ public class Variable {
 /**/
         System.out.println( myStatment.compareTo(company));
         System.out.println ( "If message start with welcome: " + myStatment.startsWith("welcome"));
-        System.out.println("If message start with goodby: "+ myStatment.endsWith("goodby"));
+        System.out.println("If message end with goodby: "+ myStatment.endsWith("goodby"));
 
 
 
