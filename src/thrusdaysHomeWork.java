@@ -3,6 +3,15 @@ import java.util.Scanner;
 
 public class thrusdaysHomeWork {
     public static void main(String[] args) {
+        System.out.println(reverseArray());
+        System.out.println(Arrays.toString(reverseNumbers(new int[]{25, 15, 3, 2, 40})));
+        System.out.println(sumOfArray(new int[]  {20, 10, 40, 44}));
+        System.out.println(Arrays.toString(sortAnArray()));
+        System.out.println( averageOfAnArray());
+        System.out.println(maxNum());
+        System.out.println( minNum());
+        System.out.println(abbreviation());
+        System.out.println(sumOfNum(5));
         System.out.println(bestStudent(new String[]{"Happy", "Peace", "Jesse", "Kaitlin", "Amir", "Donald", "Steven", "Vicky",
                 "Hannah", "David", "Gia" }, new double[]{90.0, 89.0, 91.0, 67.0, 87.0, 88.0, 93.0, 90.0, 100.0, 81.0, 54.0}));
     }
@@ -19,8 +28,8 @@ public class thrusdaysHomeWork {
         return reversed;
     }
 
-    public static int[] reverseArray(int[] numbers) {
-        //numbers = new int[]{25, 15, 3, 2, 40};
+    public static int[] reverseNumbers(int[] numbers) {
+       // numbers = new int[]{25, 15, 3, 2, 40};
         int numberLen = numbers.length;
         int[] reverse = new int[numberLen];
         for (int i = 0; i <= numbers.length - 1; i++) {
@@ -38,7 +47,7 @@ public class thrusdaysHomeWork {
         for (int i = 0; i <= num.length - 1; i++) {
             sum = sum + num[i];
         }
-        System.out.print("Summation of given array is ");
+       // System.out.print("Summation of given array is ");
         return sum;
 
     }
@@ -102,16 +111,16 @@ public class thrusdaysHomeWork {
         return sum;
     }
 
-   public static String bestStudent(String[] students, double[] marks) {
-		double maxNum = marks[0];
-		int index = 0;
-		for (int i = 1; i < marks.length; i++) {
-			if (marks[i] > maxNum) {
-				maxNum = marks[i];
-				index = i;
-			}
+    public static String bestStudent(String[] students, double[] marks) {
+        double maxNum = marks[0];
+        int index = 0;
+        for (int i = 1; i < marks.length; i++) {
+            if (marks[i] > maxNum) {
+                maxNum = marks[i];
+                index = i;
+            }
 
-		}
-		return students[index];
-}
+        }
+        return students[index];
+    }
 }
