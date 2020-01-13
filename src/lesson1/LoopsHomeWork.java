@@ -28,7 +28,6 @@ public class LoopsHomeWork {
             System.out.println(tableNumber + "X" + i + "=" + tableNumber * i);
         }
 
-
         System.out.println("Enter a number to check if it is prime:");
         int num = sc.nextInt();
         boolean isPrime = true;
