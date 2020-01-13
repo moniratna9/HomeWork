@@ -3,7 +3,8 @@ import java.util.Scanner;
 
 public class thrusdaysHomeWork {
     public static void main(String[] args) {
-        System.out.println(sumOfNum(5));
+        System.out.println(bestStudent(new String[]{"Happy", "Peace", "Jesse", "Kaitlin", "Amir", "Donald", "Steven", "Vicky",
+                "Hannah", "David", "Gia" }, new double[]{90.0, 89.0, 91.0, 67.0, 87.0, 88.0, 93.0, 90.0, 100.0, 81.0, 54.0}));
     }
 
     public static String reverseArray() {
@@ -101,18 +102,16 @@ public class thrusdaysHomeWork {
         return sum;
     }
 
-//    public static String bestStudent(String[] students, double[] marks) {
-//
-//        students = new String[]{"Happy", "Peace", "Jesse", "Kaitlin", "Amir", "Donald", "Steven", "Vicky", "Hannah", "David", "Gia" };
-//        marks = new double[]{90, 89, 91, 67, 87, 88, 93, 90, 100, 81, 54};
-//        double maxNum = marks[0];
-//
-//        for (int i = 1; i < marks.length; i++) {
-//            if (marks[i] > maxNum) {
-//                maxNum = marks[i];
-//            }
-//            return students[i];
-//        }
-//    }
+   public static String bestStudent(String[] students, double[] marks) {
+		double maxNum = marks[0];
+		int index = 0;
+		for (int i = 1; i < marks.length; i++) {
+			if (marks[i] > maxNum) {
+				maxNum = marks[i];
+				index = i;
+			}
+
+		}
+		return students[index];
 }
 }
